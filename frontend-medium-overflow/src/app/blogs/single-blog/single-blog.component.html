@@ -1,0 +1,30 @@
+<div class="row justify-content-center m-0" *ngIf="SingleBlogData">
+    <!-- blog left side -->
+    
+    <!-- blog left side end -->
+    <!-- blog right side  -->
+    <div class="col-7 mt-2">
+        <div class="display-4 mb-2">
+          {{SingleBlogData.title}}
+        </div>
+        <div class=" d-flex justify-content-start align-items-center mb-2 p-1 ps-0">
+            <img src="images/ruskin-bond.jpg" width="30px" alt="" class="rounded-circle me-2">
+            <span class="h5 me-2 mb-0">{{SingleBlogData.full_name}}</span>
+            <i class="fa-regular fa-calendar-days me-2 fa-2x"></i>
+            <span  class="h5 me-2 mb-0">{{SingleBlogData.published_at | date:'longDate' }}</span>
+                        </div>
+                        <h3 class="text-end">{{SingleBlogData.category_name}}</h3>
+        <hr class="">
+        <div class="article text-center">
+            <img class="m-2 mx-auto " src="images/art.webp" height="400px" alt="nhi aarhi image">
+            <!-- <p class="fs-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, alias sequi totam distinctio, facere dolor eius accusantium in fugiat excepturi architecto accusamus illum consequatur perferendis cumque consectetur reprehenderit. Quas magnam fugiat cum sed! Placeat ut minima, explicabo eligendi non veniam nobis, illum ad dicta atque perspiciatis, esse voluptatem dolore repudiandae?</p>
+            <h3 class="h3 ">Lorem ipsum dolor sit amet.</h3>
+            <p class="fs-5">Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia qui debitis minima aut, ratione voluptatum ad nesciunt, veritatis facilis corrupti id quasi. Soluta vero omnis perspiciatis ea. Dolorem voluptates laudantium totam deleniti autem. Expedita commodi quo, nam, exercitationem est nisi aperiam nihil hic fuga, delectus nulla unde incidunt veritatis libero dignissimos inventore praesentium dolor totam quis dolorem. Odio, explicabo eius! sitl Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque officiis vero provident, harum eligendi reiciendis illum iste? Quae minus deserunt doloribus ea voluptate ipsa officia voluptas a? Fugit nihil atque tempora necessitatibus! Nobis odio ipsum reprehenderit quidem sequi dolores beatae debitis sint ullam porro laudantium eveniet quos, quam, atque corrupti a culpa iusto unde nisi? Cupiditate totam incidunt esse tempore?</p>
+         -->
+            <div [innerHTML]="SingleBlogData.description">
+
+            </div>
+        </div>
+
+    </div>
+    <!-- blog right side ends -->

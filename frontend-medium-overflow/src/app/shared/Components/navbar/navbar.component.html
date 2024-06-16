@@ -1,0 +1,25 @@
+<nav class="navbar row m-0  my-bg d-flex">
+    <div class="d-flex col-8 align-items-center ">
+      <a href="#"> 
+        <fa-icon [icon]="iconVariable" class="me-3 fa-3x" style="color:#ff6719"></fa-icon>
+        <i class="fa-regular fa-bookmark fa-3x m-2" style="color: #ff6719"></i>
+    </a>
+      <a href="#" class="navbar-brand primary-color mt-2 fs-1 flex-grow-1 text-white">MEDIUM</a>
+      <a href="#" class="navbar-brand primary-color mt-2 me-4 fs-4 text-white">Home</a>
+      <a href="./all_blogs.html" class="navbar-brand primary-color mt-2 me-4  fs-4 text-white">Blogs</a>
+      <a href="#faq" class="navbar-brand primary-color mt-2 me-4  fs-4 text-white">FAQ</a>
+      <a href="#newsletter" class="navbar-brand primary-color mt-2 me-4  fs-4 text-white">Newsletter</a>
+    </div>
+    <div class="d-none col-4 d-lg-block row m-0  align-items-center  ">
+      <form class=" d-flex" role="search">
+        <input class="form-control  me-2" type="search" placeholder="Search" aria-label="Search" />
+        <button class="btn me-2 text-white  border-white btn-outline-success" type="submit">
+          Search
+        </button>
+        <a class="col" href="signup.html"><button type="button" class="btn me-1 my-btn text-nowrap ">Sign
+            Up</button></a>
+        <button type="button" class="btn me-1 my-btn text-nowrap "><a class="col text-decoration-none text-white" [routerLink]="['\create']">Create</a></button>
+      </form>
+    </div>
+   
+  </nav>
